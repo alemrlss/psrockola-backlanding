@@ -7,13 +7,16 @@ import {
   HttpException,
   Req,
   BadRequestException,
+  UseGuards,
 } from "@nestjs/common";
 import { StripeService } from "./stripe.service";
 import { ScreenService } from "../screen/screen.service";
 import { parse } from "path";
 import { UserService } from "../user/user.service";
+import { AuthGuard } from "../auth/jwt.strategy";
 
 @Controller("stripe")
+@UseGuards(AuthGuard)
 export class StripeController {
   constructor(
     private readonly stripeService: StripeService,
