@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/psrockol/public_html
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .* $DEPLOYPATH
+    - cd $DEPLOYPATH
+    - /bin/npm install --production
+    - /bin/npm run build
+    - echo "Despliegue completado exitosamente."
+
+subdomainurl: http://develop.back.psrockola.com
+fqdn: develop.back.psrockola.com
+```

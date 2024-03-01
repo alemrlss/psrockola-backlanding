@@ -1,0 +1,7 @@
+export enum ROLES {
+  SUPERADMIN = 19,
+  ADMIN = 18,
+  EMPRESA = 23,
+  EMPLEADOS = 22,
+  CLIENTE = 99,
+}
