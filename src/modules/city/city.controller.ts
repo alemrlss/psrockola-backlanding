@@ -25,6 +25,11 @@ export class CityController {
     return this.CityService.findAllByStateId(stateId, take, skip, name);
   }
 
+  @Get(":stateId/selects")
+  findAllSelects(@Param("stateId") stateId: number) {
+    return this.CityService.findAllSelects(stateId);
+  }
+
   @UseGuards(AuthGuard)
   @Post()
   create(@Body() body: CreateCityDto) {

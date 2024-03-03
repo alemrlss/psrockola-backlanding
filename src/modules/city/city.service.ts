@@ -38,6 +38,23 @@ export class CityService {
     return { message: "ok", data: cities, total };
   }
 
+  async findAllSelects(stateId: number) {
+    const state = await this.stateRepository.findOne({
+      where: { id: stateId },
+    });
+    if (!state) {
+      throw new HttpException("COUNTRY_NOT_FOUND", 404);
+    }
+    const cities = await this.cityRepository.find({
+      where: { state, active: 1 },
+      order: {
+        id: "DESC",
+      },
+    });
+
+    return { message: "ok", data: cities };
+  }
+
   async create(name: string, stateId: number) {
     const state = await this.stateRepository.findOne({
       where: { id: stateId },

@@ -10,7 +10,7 @@ const configService = new ConfigService();
 // LOCAL CONFIG
 
 //export const DataSourceConfig: DataSourceOptions = {
- // type: "postgres",
+  //type: "postgres",
   //host: "localhost",
   //port: 5432,
   //username: "postgres",
