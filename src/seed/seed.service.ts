@@ -26,8 +26,7 @@ export class SeedService {
     const defaultConfig: AxiosRequestConfig = {
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJhbGl6b21hcnRpbmV6MDEwM0BnbWFpbC5jb20iLCJhcGlfdG9rZW4iOiJvUzF2TEU1ZjdkZnNrU2doa1cwZ3V3OGVwLWxRdUJxNnhMempoYUJTS3gzVmxPaVRKVTFRUG9WTEd3ZGNqbGU0eDhVIn0sImV4cCI6MTcwOTQ4NDEzMn0.TT53EpSCwXwHINxAwqhgRb64NyrGEhw1N_x_7ZuDrFk",
-      },
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJhbGl6b21hcnRpbmV6MDEwM0BnbWFpbC5jb20iLCJhcGlfdG9rZW4iOiJvUzF2TEU1ZjdkZnNrU2doa1cwZ3V3OGVwLWxRdUJxNnhMempoYUJTS3gzVmxPaVRKVTFRUG9WTEd3ZGNqbGU0eDhVIn0sImV4cCI6MTcwOTU3MTA3OX0.jWfG_jnWZE3nb16KtRBzRoe5dOGAURMQnw78wj_1pgU"}
     };
 
     const response = await axios.get<T>(url, { ...defaultConfig, ...config });
@@ -80,12 +79,11 @@ export class SeedService {
         }[]
       >(`${this.apiUrl}/countries`);
 
-      
       // Encontrar el país solicitado en la respuesta de la API
       const apiCountry = apiCountries.find(
         (c) => c.country_name.toLowerCase() === countryName.toLowerCase()
-        );
-        console.log(`Countries : ${apiCountry}`)
+      );
+      console.log(`Countries : ${apiCountry}`);
 
       if (!apiCountry) {
         throw new NotFoundException(
@@ -101,7 +99,7 @@ export class SeedService {
         `${this.apiUrl}/states/${countryName}`
       );
 
-      console.log(`States: ${apiStates}`)
+      console.log(`States: ${apiStates}`);
 
       // Obtener el ID del país recién guardado
       const country = await this.countryRepository.findOne({
@@ -119,7 +117,7 @@ export class SeedService {
         const apiCities = await this.makeApiRequest<{ city_name: string }[]>(
           `${this.apiUrl}/cities/${apiState.state_name}`
         );
-        console.log(`cities: ${apiCities}`)
+        console.log(`cities: ${apiCities}`);
 
         // Obtener el ID del estado recién guardado
         const state = await this.stateRepository.findOne({

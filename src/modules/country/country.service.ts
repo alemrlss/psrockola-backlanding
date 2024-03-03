@@ -7,7 +7,7 @@ import { CreateCountryDto } from "./dto/create-country.dto";
 import { ILike } from "typeorm";
 
 @Injectable()
-export class CountryService {
+export class  CountryService {
   constructor(
     @InjectRepository(Country)
     private readonly countryRepository: Repository<Country>

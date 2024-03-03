@@ -2418,6 +2418,14 @@ export const cities = [
     state: states[indexLara],
   },
   {
+    name: "Cabudare",
+    state: states[indexLara],
+  },
+  {
+    name: "Los Rastrojos",
+    state: states[indexLara],
+  },
+  {
     name: "Arapuey",
     state: states[indexMerida],
   },
@@ -2451,6 +2459,83 @@ export const cities = [
   },
   {
     name: "Carrizal",
+    state: states[indexMiranda],
+  },
+
+  {
+    name: "Baruta",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Carrizal",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Catia La Mar",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Caucaguita",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Chacao",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Charallave",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Cua",
+    state: states[indexMiranda],
+  },
+  {
+    name: "El Cafetal",
+    state: states[indexMiranda],
+  },
+  {
+    name: "El Hatillo",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Filas de Mariche",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Guarenas",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Guatire",
+    state: states[indexMiranda],
+  },
+  {
+    name: "La Dolorita",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Los Dos Caminos",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Los Teques",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Ocumare del Tuy",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Petare",
+    state: states[indexMiranda],
+  },
+  {
+    name: "San Antonio de los Altos",
+    state: states[indexMiranda],
+  },
+  {
+    name: "Santa Teresa",
     state: states[indexMiranda],
   },
 ];
