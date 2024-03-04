@@ -13,7 +13,7 @@ export class EmailService {
       port: 465,
       secure: true,
       auth: {
-        user: "equiporockola@psrockola.com",
+        user: "equipo[srockola@psrockola.com",
         pass: configService.get("EMAIL_PASS"),
       },
     });
