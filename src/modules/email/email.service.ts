@@ -14,7 +14,7 @@ export class EmailService {
       secure: true,
       auth: {
         user: "equipopsrockola@psrockola.com",
-        pass: "ax@U[w203x(J",
+        pass: configService.get("EMAIL_PASS"),
       },
     });
   }
