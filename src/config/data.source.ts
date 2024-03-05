@@ -10,14 +10,14 @@ const configService = new ConfigService();
 // LOCAL CONFIG
 
 //export const DataSourceConfig: DataSourceOptions = {
-  //type: "postgres",
+ //type: "postgres",
   //host: "localhost",
   //port: 5432,
   //username: "postgres",
   //password: "Ale31110364",
   //database: "rockola",
   //entities: [__dirname + "/../**/*.entity{.ts,.js}"],
-  //synchronize: true,
+//synchronize: true,
 //};
 
 //RENDER CONFIG
