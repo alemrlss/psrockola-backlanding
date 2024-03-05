@@ -182,7 +182,7 @@ export class AuthService {
             <!-- Footer -->
             <div style="background-color: #F6640C; color: #ffffff; padding: 5px 0px 0px 0px; width: 100%; text-align: center;">
             <!-- Redes sociales -->
-            <a href="https://www.facebook.com/profile.php?id=100069413372128&mibextid=kFxxJD" class="contA"><img src="https://i.ibb.co/sjNTD5k/facebook.png" class="imag" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100069413372128" class="contA"><img src="https://i.ibb.co/sjNTD5k/facebook.png" class="imag" /></a>
             <a href="https://www.instagram.com/psrockola/?igsh=bzc3bXc3MnZ1cDV0" class="contA"><img src="https://i.ibb.co/MG5h9vN/instagram.png" class="imag" /></a>
             <a href="https://twitter.com/psrockolapp" class="contA"><img src="https://i.ibb.co/02WCYsc/gorjeo.png" class="imag" /></a>
             <a href="https://www.linkedin.com/in/ps-rockola-b889472b7?trk=contact-info" class="contA"><img src="https://i.ibb.co/7Rv7V6h/linkedin.png" class="imag" /></a>
@@ -274,7 +274,7 @@ export class AuthService {
             <!-- Footer -->
             <div style="background-color: #F6640C; color: #ffffff; padding: 5px 0px 0px 0px; width: 100%; text-align: center;">
             <!-- Redes sociales -->
-            <a href="https://www.facebook.com/profile.php?id=100069413372128&mibextid=kFxxJD" class="contA"><img src="https://i.ibb.co/sjNTD5k/facebook.png" class="imag" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100069413372128" class="contA"><img src="https://i.ibb.co/sjNTD5k/facebook.png" class="imag" /></a>
             <a href="https://www.instagram.com/psrockola/?igsh=bzc3bXc3MnZ1cDV0" class="contA"><img src="https://i.ibb.co/MG5h9vN/instagram.png" class="imag" /></a>
             <a href="https://twitter.com/psrockolapp" class="contA"><img src="https://i.ibb.co/02WCYsc/gorjeo.png" class="imag" /></a>
             <a href="https://www.linkedin.com/in/ps-rockola-b889472b7?trk=contact-info" class="contA"><img src="https://i.ibb.co/7Rv7V6h/linkedin.png" class="imag" /></a>
