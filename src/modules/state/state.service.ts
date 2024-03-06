@@ -46,7 +46,7 @@ export class StateService {
     const states = await this.stateRepository.find({
       where: { country, active: 1 },
       order: {
-        id: "DESC",
+        name: "ASC", // Ordena por el campo 'name' de forma ascendente (alfabéticamente)
       },
     });
 

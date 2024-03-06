@@ -27,17 +27,17 @@ export class  CountryService {
 
     return { message: "ok", data: countries, total };
   }
-
   async findAllSelects() {
     const countries = await this.countryRepository.find({
       where: { active: 1 },
       order: {
-        id: "DESC",
+        name: "ASC", // Ordena por el campo 'name' de forma ascendente (alfabéticamente)
       },
     });
-
+  
     return { message: "ok", data: countries };
   }
+  
 
   async findOne(id: number) {}
 

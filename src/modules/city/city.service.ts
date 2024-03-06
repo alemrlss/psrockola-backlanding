@@ -48,7 +48,7 @@ export class CityService {
     const cities = await this.cityRepository.find({
       where: { state, active: 1 },
       order: {
-        id: "DESC",
+        name: "ASC", // Ordena por el campo 'name' de forma ascendente (alfabéticamente)
       },
     });
 
